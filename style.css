@@ -1,4 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-color: rgb(225, 255, 143);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-image: url(images/Group-stars.png);
+  background-position: -170% 110%;
+  background-size: auto;
+}
+.top__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 768px;
+  padding-top: 196px;
+}
+.top__tittle {
+  color: rgb(32, 32, 39);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.top__discription {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.top__button {
+  width: 247px;
+  height: 66px;
+  margin-top: 24px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+}
+.top__button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.top__running-line {
+  height: 90px;
+  display: flex;
+  gap: 51px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  align-items: center;
+  margin-top: 156px;
+  padding-left: 49px;
+  overflow: hidden;
+}
+.top__list {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}/*# sourceMappingURL=style.css.map */
