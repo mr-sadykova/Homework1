@@ -1,0 +1,196 @@
+$gap: 24px;
+$color-text: rgb(32, 32, 39);
+$gap-line: 51px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    background: rgb(225, 255, 143);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url(images/Star-2.svg), url(images/Star-3.svg), url(images/Star-4.svg), url(images/Star-5.svg), url(images/big-star.svg);
+    background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333.46px;
+    background-size: auto;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        max-width: 768px;
+        padding-top: 196px;
+    }
+
+    &__tittle {
+        color: $color-text;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+    }
+
+    &__discription {
+        color: $color-text;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        margin-top: $gap;
+        box-sizing: border-box;
+        border: 1px solid $color-text;
+        border-radius: 60px;
+        background: $color-text;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: $gap;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    &__button:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+    &__running-line {
+        height: 90px;
+        display: flex;
+        gap: $gap-line;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+        align-items: center;
+        margin-top: 156px;
+        padding-left: 49px;
+        overflow: hidden;
+    }
+
+    &__list {
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+        text-wrap: nowrap;
+    }
+}
+
+.games-box {
+    background: $color-text;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(images/Star-11.svg), url(images/Star-12.svg), url(images/Star-1.svg);
+    background-position: 27.97px 864px, 45.18px 914px, right 0 top 94px;
+    padding-top: 94px;
+
+    &__games {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        margin-bottom: 72px;
+        max-width: 1200px;
+    }
+
+    &__tittle {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+    }
+
+    &__description {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    &__content {
+        max-width: 1200px;
+        display: flex;
+        gap: 32px;
+        align-items: start;
+        padding-bottom: 50px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 4;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        transition: all 1s;
+    }
+
+    &__link:hover {
+        transform: scale(1.1);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 36px;
+    }
+
+    &__number {
+        color: $color-text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 111px;
+        height: 36px;
+    }
+
+    &__name {
+        color: $color-text;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+        width: 314px;
+    }
+}
