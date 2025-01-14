@@ -24,8 +24,8 @@ a {
     background: rgb(225, 255, 143);
     height: 800px;
     background-repeat: no-repeat;
-    background-image: url(images/Group-stars.png);
-    background-position: -170% 110%;
+    background-image: url(images/Star-2.svg), url(images/Star-3.svg), url(images/Star-4.svg), url(images/Star-5.svg), url(images/big-star.svg);
+    background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333.46px;
     background-size: auto;
 
     &__header {
@@ -102,12 +102,11 @@ a {
 }
 
 .games-box {
-    max-width: 1201px;
     background: $color-text;
     background-repeat: no-repeat;
     background-size: auto;
-    background-image: url(images/star-1.png), url(images/star-2.png);
-    background-position: 100% 10%, 10% 55%;
+    background-image: url(images/Star-11.svg), url(images/Star-12.svg), url(images/Star-1.svg);
+    background-position: 27.97px 864px, 45.18px 914px, right 0 top 94px;
     padding-top: 94px;
 
     &__games {
@@ -115,8 +114,8 @@ a {
         flex-direction: column;
         gap: $gap;
         margin-bottom: 72px;
+        max-width: 1200px;
     }
-
 
     &__tittle {
         color: rgb(255, 255, 255);
@@ -194,5 +193,4 @@ a {
         text-align: left;
         width: 314px;
     }
-
 }
