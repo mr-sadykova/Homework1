@@ -21,7 +21,7 @@ a {
   height: 800px;
   background-repeat: no-repeat;
   background-image: url(images/Star-2.svg), url(images/Star-3.svg), url(images/Star-4.svg), url(images/Star-5.svg), url(images/big-star.svg);
-  background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333.46px;
+  background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, right -448px top -333.46px;
   background-size: auto;
 }
 .top__header {
