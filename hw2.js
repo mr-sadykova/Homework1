@@ -14,3 +14,12 @@ alert(yearEdition);
 
 const nameOfJavaScriptCreator =  'Брэндан Эйх';
 alert(nameOfJavaScriptCreator);
+
+// Задание 4
+
+let m = 10;
+let b = 2;
+alert(m + b);
+alert(m - b);
+alert(m * b);
+alert(m / b);
