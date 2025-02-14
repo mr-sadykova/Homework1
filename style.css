@@ -195,6 +195,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-bottom: 144px;
 }
 .mini-games__content a:nth-child(2n+1) .mini-games__card {
   flex-direction: row-reverse;
@@ -250,6 +251,23 @@ a {
 .mini-games__button:hover {
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__title {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
 }
 
 @media (max-width: 767px) {
