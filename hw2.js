@@ -5,3 +5,7 @@ alert(a);
 a = 20;
 alert(a);
 
+// Задание 2
+
+const yearEdition = 2007;
+alert(yearEdition);
