@@ -9,3 +9,8 @@ alert(a);
 
 const yearEdition = 2007;
 alert(yearEdition);
+
+// Задание 3
+
+const nameOfJavaScriptCreator =  'Брэндан Эйх';
+alert(nameOfJavaScriptCreator);
