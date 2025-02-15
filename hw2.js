@@ -34,3 +34,14 @@ alert('Результат = ' + result);
 let v = 9;
 let z = 2;
 alert('Остаток = ' + (v % z));
+
+// Задание 7
+
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
