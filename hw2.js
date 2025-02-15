@@ -58,3 +58,8 @@ const user = {
     age: 18,
     isAdmin: false,
 };
+
+// Задание 10
+
+let yourName = prompt('Как Вас зовут?');
+alert('Привет, ' + yourName + '!');
