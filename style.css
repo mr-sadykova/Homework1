@@ -17,6 +17,9 @@ a {
 }
 
 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: rgb(225, 255, 143);
   height: 800px;
   background-repeat: no-repeat;
@@ -284,6 +287,9 @@ a {
     background-size: 35px 35px, 21px 21px, 39px 41px, 18px 18px, auto;
     background-position: 37px 97px, 91px 64px, right 37px bottom 79px, right 86px bottom 125px, right 0 top 0;
   }
+  .top__header {
+    padding-top: 147px;
+  }
   .top__title {
     font-size: 40px;
     line-height: 49px;
@@ -298,6 +304,8 @@ a {
     font-size: 16px;
     align-self: center;
     margin-top: 12px;
+    width: 285px;
+    height: 55px;
   }
   .top__button:hover {
     background: rgb(32, 32, 39);

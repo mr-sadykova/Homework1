@@ -24,6 +24,10 @@
             right 37px bottom 79px,
             right 86px bottom 125px,
             right 0 top 0;
+        
+        &__header {
+            padding-top: 147px;
+        }
 
         &__title {
             font-size: 40px;
@@ -41,6 +45,8 @@
             font-size: 16px;
             align-self: center;
             margin-top: 12px;
+            width: 285px;
+            height: 55px;
         }
 
         &__button:hover {

@@ -19,6 +19,9 @@ a {
 }
 
 .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: $color-light-lime;
     height: 800px;
     background-repeat: no-repeat;
@@ -34,6 +37,7 @@ a {
         948px 538px,
         right -448px top -333.46px;
     background-size: auto;
+
 
     &__header {
         display: flex;
