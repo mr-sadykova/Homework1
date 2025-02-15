@@ -28,3 +28,9 @@ alert('Частное = ' + (m / b));
 
 const result = 2 ** 5;
 alert('Результат = ' + result);
+
+// Задание 6
+
+let v = 9;
+let z = 2;
+alert('Остаток = ' + (v % z));
