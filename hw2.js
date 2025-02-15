@@ -12,7 +12,7 @@ alert('Год выпуска первого iPhone: ' + yearEdition);
 
 // Задание 3
 
-const nameOfJavaScriptCreator =  'Брэндан Эйх';
+const nameOfJavaScriptCreator = 'Брэндан Эйх';
 alert('Имя создателя языка JavaScript: ' + nameOfJavaScriptCreator);
 
 // Задание 4
@@ -45,3 +45,8 @@ num /= 3;
 num++;
 num--;
 alert(num);
+
+// Задание 8
+
+let age = prompt('Сколько вам лет?');
+alert(prompt);
