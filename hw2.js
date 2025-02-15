@@ -62,4 +62,4 @@ const user = {
 // Задание 10
 
 let yourName = prompt('Как Вас зовут?');
-alert('Привет, ' + yourName + '!');
+alert(`Привет, ${yourName}!`);
