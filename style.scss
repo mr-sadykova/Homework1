@@ -82,18 +82,19 @@ a {
         color: $color-midnight-blue;
     }
 
-    &__running-line {
-        height: 90px;
-        display: flex;
-        gap: $gap-line;
-        box-sizing: border-box;
-        border: 1px solid $color-translucent-white;
-        backdrop-filter: blur(50px);
-        background: $color-neon-lime;
-        align-items: center;
-        padding-left: 49px;
-        overflow: hidden;
-    }
+}
+
+.running-line {
+    height: 90px;
+    display: flex;
+    gap: $gap-line;
+    box-sizing: border-box;
+    border: 1px solid $color-translucent-white;
+    backdrop-filter: blur(50px);
+    background: $color-neon-lime;
+    align-items: center;
+    padding-left: 49px;
+    overflow: hidden;
 
     &__list {
         color: $color-midnight-blue;

@@ -47,11 +47,11 @@
             background: $color-midnight-blue;
             color: $color-white;
         }
+    }
 
-        &__running-line {
-            height: 50px;
-        }
-
+    .running-line {
+        height: 50px;
+        
         &__img {
             width: 19.34px;
             height: 19.34px;
@@ -62,7 +62,7 @@
             line-height: 110%;
         }
     }
-
+    
     .games-box {
         display: none;
         &__link:hover {

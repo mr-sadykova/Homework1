@@ -66,7 +66,8 @@ a {
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
 }
-.top__running-line {
+
+.running-line {
   height: 90px;
   display: flex;
   gap: 51px;
@@ -79,7 +80,7 @@ a {
   padding-left: 49px;
   overflow: hidden;
 }
-.top__list {
+.running-line__list {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 30px;
@@ -302,14 +303,14 @@ a {
     background: rgb(32, 32, 39);
     color: rgb(255, 255, 255);
   }
-  .top__running-line {
+  .running-line {
     height: 50px;
   }
-  .top__img {
+  .running-line__img {
     width: 19.34px;
     height: 19.34px;
   }
-  .top__list {
+  .running-line__list {
     font-size: 16px;
     line-height: 110%;
   }
