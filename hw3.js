@@ -26,3 +26,10 @@ if (d > 100 || e >100) {
 } else {
     console.log("Неверно");
 }
+
+// Задание 4
+
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
+
