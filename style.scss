@@ -1,6 +1,4 @@
-$gap: 24px;
-$color-text: rgb(32, 32, 39);
-$gap-line: 51px;
+@import 'vars';
 
 * {
     margin: 0;
@@ -21,12 +19,25 @@ a {
 }
 
 .top {
-    background: rgb(225, 255, 143);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $color-light-lime;
     height: 800px;
     background-repeat: no-repeat;
-    background-image: url(images/Star-2.svg), url(images/Star-3.svg), url(images/Star-4.svg), url(images/Star-5.svg), url(images/big-star.svg);
-    background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333.46px;
+    background-image: url(images/Star-2.svg),
+        url(images/Star-3.svg),
+        url(images/Star-4.svg),
+        url(images/Star-5.svg),
+        url(images/big-star.svg);
+    background-position:
+        63px 94px,
+        156px 69px,
+        1013px 568px,
+        948px 538px,
+        right -448px top -333.46px;
     background-size: auto;
+
 
     &__header {
         display: flex;
@@ -36,19 +47,20 @@ a {
         padding-top: 196px;
     }
 
-    &__tittle {
-        color: $color-text;
-        font-size: 64px;
+    &__title {
+        color: $color-midnight-blue;
+        font-size: $title-large;
         font-weight: 700;
         line-height: 78px;
         text-align: left;
     }
 
     &__discription {
-        color: $color-text;
-        font-size: 24px;
+        width: 720px;
+        color: $color-midnight-blue;
+        font-size: $gap;
         font-weight: 400;
-        line-height: 32px;
+        line-height: $title-small;
         text-align: left;
     }
 
@@ -57,39 +69,40 @@ a {
         height: 66px;
         margin-top: $gap;
         box-sizing: border-box;
-        border: 1px solid $color-text;
+        border: 1px solid $color-midnight-blue;
         border-radius: 60px;
-        background: $color-text;
+        background: $color-midnight-blue;
         font-family: "Montserrat", sans-serif;
-        color: rgb(255, 255, 255);
+        color: $color-white;
         font-size: $gap;
         font-weight: 600;
         line-height: 141.69%;
         text-align: center;
         transition: all 0.5s;
+        cursor: pointer;
     }
 
     &__button:hover {
-        background: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
+        background: $color-white;
+        color: $color-midnight-blue;
     }
 
-    &__running-line {
-        height: 90px;
-        display: flex;
-        gap: $gap-line;
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(50px);
-        background: rgb(188, 236, 48);
-        align-items: center;
-        margin-top: 156px;
-        padding-left: 49px;
-        overflow: hidden;
-    }
+}
+
+.running-line {
+    height: 90px;
+    display: flex;
+    gap: $gap-line;
+    box-sizing: border-box;
+    border: 1px solid $color-translucent-white;
+    backdrop-filter: blur(50px);
+    background: $color-neon-lime;
+    align-items: center;
+    padding-left: 49px;
+    overflow: hidden;
 
     &__list {
-        color: $color-text;
+        color: $color-midnight-blue;
         font-family: Montserrat;
         font-size: 30px;
         font-weight: 700;
@@ -102,11 +115,17 @@ a {
 }
 
 .games-box {
-    background: $color-text;
+    background: $color-midnight-blue;
     background-repeat: no-repeat;
     background-size: auto;
-    background-image: url(images/Star-11.svg), url(images/Star-12.svg), url(images/Star-1.svg);
-    background-position: 27.97px 864px, 45.18px 914px, right 0 top 94px;
+    background-image:
+        url(images/Star-11.svg),
+        url(images/Star-12.svg),
+        url(images/Star-1.svg);
+    background-position:
+        27.97px 864px,
+        45.18px 914px,
+        right 0 top 94px;
     padding-top: 94px;
 
     &__games {
@@ -117,26 +136,27 @@ a {
         max-width: 1200px;
     }
 
-    &__tittle {
-        color: rgb(255, 255, 255);
-        font-size: 64px;
+    &__title {
+        color: $color-white;
+        font-size: $title-large;
         font-weight: 700;
         line-height: 78px;
         text-align: left;
     }
 
     &__description {
-        color: rgb(255, 255, 255);
-        font-size: 24px;
+        color: $color-white;
+        font-size: $gap;
         font-weight: 400;
-        line-height: 32px;
+        line-height: $title-small;
         text-align: left;
     }
 
     &__content {
         max-width: 1200px;
         display: flex;
-        gap: 32px;
+        flex-wrap: wrap;
+        gap: $title-small;
         align-items: start;
         padding-bottom: 50px;
     }
@@ -144,14 +164,14 @@ a {
     &__column {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: $title-small;
     }
 
     &__link {
         display: flex;
         flex-direction: column;
         grid-column: span 4;
-        background-color: #FFFFFF;
+        background-color: $color-white;
         border-radius: 30px;
         transition: all 1s;
     }
@@ -164,20 +184,20 @@ a {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        margin-top: 32px;
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-top: $title-small;
+        margin-left: $title-small;
+        margin-right: $title-small;
         margin-bottom: 36px;
     }
 
     &__number {
-        color: $color-text;
+        color: $color-midnight-blue;
         font-size: 16px;
         font-weight: 500;
         line-height: 110%;
         text-align: left;
         border-radius: 52.58px;
-        background: rgb(247, 247, 247);
+        background: $color-off-white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,11 +206,129 @@ a {
     }
 
     &__name {
-        color: $color-text;
-        font-size: 32px;
+        color: $color-midnight-blue;
+        font-size: $title-small;
         font-weight: 700;
         line-height: 39px;
         text-align: left;
         width: 314px;
     }
 }
+
+.mini-games {
+    background: $color-midnight-blue;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image:
+        url(images/Star-6.svg),
+        url(images/Star-7.svg),
+        url(images/Star-8.svg),
+        url(images/Star-10.svg);
+    background-position:
+        right 44.91px top 126px,
+        right 123.79px top 93px,
+        right 52px bottom 65px,
+        right 150px bottom 45px;
+
+    &__title {
+        color: $color-white;
+        font-size: $title-large;
+        font-weight: 700;
+        line-height: 78px;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: $title-small;
+        padding-bottom: 144px;
+    }
+
+    &__content a:nth-child(2n+1) &__card {
+        flex-direction: row-reverse;
+    }
+
+    &__link {
+        display: flex;
+        background-color: $color-white;
+        border-radius: 30px;
+    }
+
+    &__card {
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        padding: $title-middle;
+    }
+
+    &__info {
+        box-sizing: border-box;
+        width: 505px;
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+    }
+
+    &__name {
+        color: $color-midnight-blue;
+        font-size: $title-middle;
+        font-weight: 700;
+        line-height: 59px;
+    }
+
+    &__description {
+        color: $color-midnight-blue;
+        font-size: $gap;
+        font-weight: 400;
+        line-height: $title-small;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        color: $color-white;
+        font-size: $gap;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid $color-midnight-blue;
+        border-radius: 60px;
+        background: $color-midnight-blue;
+        font-family: "Montserrat", sans-serif;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background: $color-white;
+        color: $color-midnight-blue;
+    }
+}
+
+.footer {
+    height: 150px;
+    background: $color-lime-green;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: $color-midnight-blue;
+        font-size: $gap;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        display: flex;
+    }
+}
+
+@import 'mobile';
