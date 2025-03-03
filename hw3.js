@@ -61,3 +61,18 @@ switch (monthNumber) {
         alert("Никакой");
         break;
 }
+
+// Дополнительное задание 1
+
+let value = prompt('Пожалуйста, введите любое число');
+let result = Number(value);
+if (isNaN(result)) {
+    alert("Не является числом")
+} else {
+    alert("Является числом")
+}
+if (result % 2 !== 0) {
+    alert("Четное число")
+} else {
+   alert("Нечетное число");
+}
