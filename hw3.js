@@ -67,12 +67,22 @@ switch (monthNumber) {
 let value = prompt('Пожалуйста, введите любое число');
 let result = Number(value);
 if (isNaN(result)) {
-    alert("Не является числом")
+    alert("Не является числом");
 } else {
-    alert("Является числом")
+    alert("Является числом");
+    if (result % 2 === 0) {
+        alert("Четное число");
+    } else { 
+       alert("Нечетное число");
+    }
 }
-if (result % 2 !== 0) {
-    alert("Четное число")
+
+// Дополнительное задание 2
+
+let question = prompt("Введите код операциооной системы")
+let clientOS = parseInt(question, 10);
+if (clientOS === 0) {
+    alert("Установите версию приложения для iOS по ссылке");
 } else {
-   alert("Нечетное число");
+    alert("Установите версию приложения для Android по ссылке");
 }
