@@ -65,15 +65,19 @@ switch (monthNumber) {
 // Дополнительное задание 1
 
 let value = prompt('Пожалуйста, введите любое число');
-let result = Number(value);
-if (isNaN(result)) {
-    alert("Не является числом");
+if (value === "") {
+    alert("Поле не должно быть пустым");
 } else {
-    alert("Является числом");
-    if (result % 2 === 0) {
-        alert("Четное число");
-    } else { 
-       alert("Нечетное число");
+    let result = Number(value);
+    if (isNaN(result)) {
+        alert("Не является числом");
+    } else {
+        alert("Является числом");
+        if (result % 2 === 0) {
+            alert("Четное число");
+        } else {
+            alert("Нечетное число");
+        }
     }
 }
 
@@ -85,4 +89,23 @@ if (clientOS === 0) {
     alert("Установите версию приложения для iOS по ссылке");
 } else {
     alert("Установите версию приложения для Android по ссылке");
+}
+
+// Дополнительное задание 3
+
+let howOld = prompt("Введите год выпуска устройства")
+let clientDeviceYear = 2015;
+howOld = Number(howOld);
+if (clientOS === 0) {
+    if (howOld <= clientDeviceYear) {
+        alert('Установите облегченную версию приложения для iOS по ссылке');
+    } else {
+        alert('Установите версию приложения для iOS по ссылке');
+    }
+} else  if (clientOS === 1) {
+    if (howOld <= clientDeviceYear) {
+        alert('Установите облегченную версию приложения для Android по ссылке');
+    } else {
+        alert('Установите версию приложения для Android по ссылке');
+    }
 }
