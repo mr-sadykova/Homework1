@@ -22,5 +22,15 @@ for (let b = 0; b <= 5; b++) {
 
 for (let c = 7; c <= 22; c++) {
     console.log(c);
-    
+}
+
+// Задание 4
+
+const obj = {
+    Коля: '200',
+    Вася: '300',
+    Петя: '400'
+}
+for (const key in obj) {
+    console.log(`${key} - ${obj[key]}`);
 }
