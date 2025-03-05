@@ -17,3 +17,10 @@ for (let a = 0; a < 2; a++) {
 for (let b = 0; b <= 5; b++) {
     console.log(b);    
 }
+
+// Задание 3
+
+for (let c = 7; c <= 22; c++) {
+    console.log(c);
+    
+}
