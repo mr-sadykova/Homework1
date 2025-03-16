@@ -31,7 +31,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 768px;
+  max-width: 778px;
   padding-top: 196px;
 }
 .top__title {
