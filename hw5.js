@@ -63,3 +63,17 @@ function calc(a, b) {
     }
 }
 console.log(calc(6, 7));
+
+// Задание 6
+
+function getNumber() {
+    let number = prompt('Введите число');
+    if (isNaN(number)) {
+        return 'Переданный параметр не является числом'
+    } else {
+        return `${number} в кубе равняется ${Math.pow(number, 3)}`;
+    }
+}
+
+alert(getNumber());
+
