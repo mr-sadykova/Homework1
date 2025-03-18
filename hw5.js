@@ -24,3 +24,14 @@ function evenUneven(n) {
 
 console.log(evenUneven(5));
 console.log(evenUneven(6));
+
+// Задание 3
+
+function square(number) {
+    console.log(number ** 2);
+}
+
+const degree = (n) => n ** 2;
+
+square(3);
+console.log(degree(6));
