@@ -52,3 +52,14 @@ function age() {
     }
 }
 age();
+
+// Задание 5
+
+function calc(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом';
+    } else {
+        return a * b
+    }
+}
+console.log(calc(6, 7));
