@@ -77,3 +77,29 @@ function getNumber() {
 
 alert(getNumber());
 
+// Задание 7
+
+function getArea() {
+    return Math.PI * this.radius ** 2;    
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 10,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+
+const circle2 = {
+    radius: 20,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+console.log(`Площадь круга с радиусом ${circle1.radius} равна ${circle1.methodGetArea().toFixed(1)}`);
+console.log(`Периметр окружности с радиусом ${circle1.radius} равен ${circle1.methodGetPerimeter().toFixed(1)}`);
+console.log(`Площадь круга с радиусом ${circle2.radius} равна ${circle2.methodGetArea().toFixed(1)}`);
+console.log(`Периметр окружности с радиусом ${circle2.radius} равен ${circle2.methodGetPerimeter().toFixed(1)}`);
+
