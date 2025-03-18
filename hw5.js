@@ -11,3 +11,16 @@ function less(a, b) {
 console.log(less(4, 8));
 console.log(less(6, 6));
 console.log(less(9, 1));
+
+// Задание 2
+
+function evenUneven(n) {
+    if (n % 2 === 0) {
+      return 'Число четное';  
+    } else {
+       return 'Число нечетное'; 
+    }
+}
+
+console.log(evenUneven(5));
+console.log(evenUneven(6));
