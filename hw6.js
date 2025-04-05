@@ -34,3 +34,9 @@ for (let i = 0; i < 3; i++) {
     arr4.push(arr42);
 }
 console.log(arr4);
+
+// Задание 5
+
+const arr5 = [1, 1, 1]
+arr5.push(2, 2, 2);
+console.log(arr5);
