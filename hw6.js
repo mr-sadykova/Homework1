@@ -48,3 +48,12 @@ arr6.sort();
 const filteredArr = arr6.filter(item => typeof item !== 'string');
 console.log(filteredArr);
 
+// Задание 7
+
+const arr7 = [9, 8, 7, 6, 5];
+const userNumber = +prompt('Введите число');
+if (arr7.includes(userNumber)) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
