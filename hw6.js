@@ -90,3 +90,10 @@ function square(arr11) {
     return arr11.map(item => item ** 2);
 }
 console.log(square([1, 2, 3]));
+
+// Задание 12
+
+function getLength(arr12) {
+    return arr12.map(item => item.length);
+}
+console.log(getLength(['hello', 'world']));
