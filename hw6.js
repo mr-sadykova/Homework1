@@ -104,3 +104,22 @@ function negativeNumbers(arr13) {
     return arr13.filter(item => item < 0);
 }
 console.log(negativeNumbers([1, -1, 2, -2, 3, -3, 4, -4, 5, -5]));
+
+// Задание 14
+
+function randomNumber() {
+    return Math.floor(Math.random() * 10);
+}
+const arr14 = [];
+for (let i = 0; i < 10; i++) {
+    arr14.push(randomNumber());
+}
+console.log(arr14);
+const evenArr = [];
+console.log(arr14);
+for (let i = 0; i < arr14.length; i++) {
+    if (arr14[i] % 2 === 0) {
+        evenArr.push(arr14[i]);
+    }    
+}
+console.log(evenArr);
