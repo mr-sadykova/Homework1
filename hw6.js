@@ -83,3 +83,10 @@ for (let i = 0; i < arr10.length; i++) {
         console.log(arr10[i] + arr10[i + 1]);
     }
 }
+
+// Задание 11
+
+function square(arr11) {
+    return arr11.map(item => item ** 2);
+}
+console.log(square([1, 2, 3]));
