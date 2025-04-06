@@ -97,3 +97,10 @@ function getLength(arr12) {
     return arr12.map(item => item.length);
 }
 console.log(getLength(['hello', 'world']));
+
+// Задание 13
+
+function negativeNumbers(arr13) {
+    return arr13.filter(item => item < 0);
+}
+console.log(negativeNumbers([1, -1, 2, -2, 3, -3, 4, -4, 5, -5]));
