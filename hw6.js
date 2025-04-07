@@ -123,3 +123,18 @@ for (let i = 0; i < arr14.length; i++) {
     }    
 }
 console.log(evenArr);
+
+// Задание 15
+
+function randomNumb() {
+    return Math.floor(Math.random() * 10);
+}
+
+const arr15 = [];
+for (let i = 0; i < 6; i++) {
+    arr15.push(randomNumb()); 
+}
+
+console.log(arr15);
+console.log(arr15.reduce((a, b) => a + b) / arr15.length);
+
