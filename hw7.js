@@ -32,3 +32,9 @@ function getRandomNumber() {
 }
 console.log(getRandomNumber());
 
+// Задание 6
+
+function getRandomNum(num) {
+    return Array.from({length: Math.floor(num / 2)}, () => Math.floor(Math.random() * num));
+}
+console.log(getRandomNum(10));
