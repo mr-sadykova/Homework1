@@ -39,9 +39,14 @@ function getRandomNum(num) {
 }
 console.log(getRandomNum(10));
 
-// Заданиеv 7
+// Задание 7
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min +1)) + min;
 }
 console.log(getRandomInt(3, 8));
+
+// Задание 8
+
+console.log(new Date());
+
