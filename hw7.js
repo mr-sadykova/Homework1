@@ -38,3 +38,10 @@ function getRandomNum(num) {
     return Array.from({length: Math.floor(num / 2)}, () => Math.floor(Math.random() * num));
 }
 console.log(getRandomNum(10));
+
+// Заданиеv 7
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min +1)) + min;
+}
+console.log(getRandomInt(3, 8));
