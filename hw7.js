@@ -50,3 +50,10 @@ console.log(getRandomInt(3, 8));
 
 console.log(new Date());
 
+// Задание 9
+
+const currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
+
+// Задание 10
