@@ -24,3 +24,11 @@ console.log(Math.round(num));
 
 console.log(Math.min(52, 53, 49, 77, 21, 32));
 console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+// Задание 5
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * 10) +1;
+}
+console.log(getRandomNumber());
+
