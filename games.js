@@ -1,11 +1,11 @@
 // Игра "Угадай число"
 
 function guessRandomInt() {
-    const randomNumber = Math.floor(Math.random() * 100) + 1; 
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
     let guess;
 
     while (true) {
-        guess = prompt('Угадай число от 1 до 100:'); 
+        guess = prompt('Угадай число от 1 до 100:');
         if (guess === null) {
             alert('Игра окончена!');
             break;
@@ -17,7 +17,7 @@ function guessRandomInt() {
             alert('Загаданное число меньше!');
         } else {
             alert('Поздравляю! Вы угадали число!');
-            break; 
+            break;
         }
     }
 }
@@ -74,26 +74,26 @@ function simpleArithmetic() {
 // Игра "Переверни текст"
 
 function turnTheText() {
-   let  userText;
+    let userText;
 
-   do {
-    userText = prompt("Введите текст для переворачивания");
+    do {
+        userText = prompt("Введите текст для переворачивания");
 
-    if (userText === null) {
-        alert ("Вввод отменен");
-        return;
-    }
+        if (userText === null) {
+            alert("Вввод отменен");
+            return;
+        }
 
-    const trimmedText = userText.trim();
+        const trimmedText = userText.trim();
 
-    if (trimmedText === '') {
-        alert("Вы ввели пустую строку. Пожалуйста, введите текст");
-    } else {
-        const reversedText = trimmedText.split('').reverse().join('');
-        alert("Перевёрнутый текст:\n" + reversedText);
-        return;
-    }
-} while (true);
+        if (trimmedText === '') {
+            alert("Вы ввели пустую строку. Пожалуйста, введите текст");
+        } else {
+            const reversedText = trimmedText.split('').reverse().join('');
+            alert("Перевёрнутый текст:\n" + reversedText);
+            return;
+        }
+    } while (true);
 }
 
 
