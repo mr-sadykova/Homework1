@@ -98,3 +98,51 @@ function turnTheText() {
 
 
 // Игра "Простая викторина"
+
+function simpleQuiz() {
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let totalCorrect = 0;
+    let playerResponse;
+
+    for (let i = 0; i < quiz.length; i++) {
+        const question = quiz[i];
+
+        let questionText = `${question.question}\n\n`;
+        questionText += question.options.join('\n');
+        questionText += "\n\nВведите номер правильного ответа:";
+        playerResponse = prompt(questionText);
+
+        if (playerResponse === null) {
+            alert("Викторина прервана!");
+            return;
+        }
+        
+        const numericAnswer = parseInt(playerResponse.trim());
+        
+        if (numericAnswer === question.correctAnswer) {
+            totalCorrect++;
+            alert("Правильно!");
+            } else {
+            alert(`Неправильно! \nПравильный ответ: ${question.correctAnswer}`);
+        }
+    }
+    alert(`Викторина завершена!\n\nПравильных ответов: ${totalCorrect} из ${quiz.length}`);
+
+}
