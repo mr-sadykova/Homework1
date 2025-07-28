@@ -70,3 +70,31 @@ function simpleArithmetic() {
         }
     }
 }
+
+// Игра "Переверни текст"
+
+function turnTheText() {
+   let  userText;
+
+   do {
+    userText = prompt("Введите текст для переворачивания");
+
+    if (userText === null) {
+        alert ("Вввод отменен");
+        return;
+    }
+
+    const trimmedText = userText.trim();
+
+    if (trimmedText === '') {
+        alert("Вы ввели пустую строку. Пожалуйста, введите текст");
+    } else {
+        const reversedText = trimmedText.split('').reverse().join('');
+        alert("Перевёрнутый текст:\n" + reversedText);
+        return;
+    }
+} while (true);
+}
+
+
+// Игра "Простая викторина"
