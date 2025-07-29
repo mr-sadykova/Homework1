@@ -44,7 +44,7 @@
             </section>
             <div class="games-box__content">
                 <div class="games-box__column">
-                    <a class="games-box__link" href="#game-1">
+                    <a class="games-box__link smooth-link" href="#game-1">
                         <article class="games-box__card games-box__card_1">
                             <img src="images/game-1.png" alt="game-1">
                             <div class="games-box__container">
@@ -53,7 +53,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="games-box__link" href="#game-4">
+                    <a class="games-box__link smooth-link" href="#game-4">
                         <article class="games-box__card games-box__card_4">
                             <img src="images/game-4.png" alt="game-4">
                             <div class="games-box__container">
@@ -64,7 +64,7 @@
                     </a>
                 </div>
                 <div class="games-box__column">
-                    <a class="games-box__link" href="#game-2">
+                    <a class="games-box__link smooth-link" href="#game-2">
                         <article class="games-box__card games-box__card_2">
                             <img src="images/game-2.png" alt="game-2">
                             <div class="games-box__container">
@@ -73,7 +73,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="games-box__link" href="#game-5">
+                    <a class="games-box__link smooth-link" href="#game-5">
                         <article class="games-box__card games-box__card_5">
                             <img src="images/game-5.png" alt="game-5">
                             <div class="games-box__container">
@@ -84,7 +84,7 @@
                     </a>
                 </div>
                 <div class="games-box__column">
-                    <a class="games-box__link" href="#game-3">
+                    <a class="games-box__link smooth-link" href="#game-3">
                         <article class="games-box__card games-box__card_3">
                             <img src="images/game-3.png" alt="game-3">
                             <div class="games-box__container">
@@ -93,7 +93,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="games-box__link" href="#game-6">
+                    <a class="games-box__link smooth-link" href="#game-6">
                         <article class="games-box__card games-box__card_6">
                             <img src="images/game-6.png" alt="game-6">
                             <div class="games-box__container">
@@ -203,6 +203,25 @@
                 behavior: 'smooth'
             });
         });
+    </script>
+    <script>
+        document.querySelectorAll('.smooth-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const offset = 100;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
     </script>
 </body>
 
