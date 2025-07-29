@@ -80,7 +80,7 @@ function turnTheText() {
         userText = prompt("Введите текст для переворачивания");
 
         if (userText === null) {
-            alert("Вввод отменен");
+            alert("Игра окончена!");
             return;
         }
 

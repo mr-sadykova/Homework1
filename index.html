@@ -18,7 +18,7 @@
             <p class="top__discription">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
                 <b>«Поехали!»</b> и <b>приступай.</b>
             </p>
-            <button class="top__button" href="#games-box__title">Поехали!</button>
+            <button class="top__button" href="#games-box__title" id="scroll-button">Поехали!</button>
         </header>
         <div class="running-line">
             <p class="running-line__list">Викторина</p>
@@ -36,7 +36,7 @@
         </div>
     </div>
     <main>
-        <div class="games-box center">
+        <div class="games-box center" id="games-section">
             <section class="games-box__games">
                 <h1 class="games-box__title">Об играх</h1>
                 <p class="games-box__description">В моей коллекции представлено 6 игр на разные темы.<br> Игры несложные
@@ -197,6 +197,13 @@
     <!-- <script src="hw5.js"></script> -->
     <!-- <script src="hw6.js"></script> -->
     <script src="hw7.js"></script>
+    <script>
+        document.getElementById('scroll-button').addEventListener('click', function () {
+            document.getElementById('games-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>

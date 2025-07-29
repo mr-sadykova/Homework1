@@ -59,15 +59,15 @@ console.log(currentDate);
 // Задание 10
 
 function formatDate(date) {
-    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]; 
+    const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+    const months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]; 
     const year = date.getFullYear();
     const day = date.getDate();
     const month = date.getMonth();
     const dayOfWeek = days[date.getDay()];
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds =date.getSeconds();
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const seconds = date.getSeconds().toString().padStart(2, '0');
 
     return `
     Дата : ${day} ${months[month]} ${year} - это ${dayOfWeek}.
