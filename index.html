@@ -16,8 +16,9 @@
         <header class="top__header center">
             <h1 class="top__title">Добро пожаловать<br> на мой сайт мини-игр</h1>
             <p class="top__discription">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
-                <b>«Поехали!»</b> и <b>приступай.</b></p>
-            <button class="top__button" href="#games-box__title">Поехали!</button>
+                <b>«Поехали!»</b> и <b>приступай.</b>
+            </p>
+            <button class="top__button" href="#games-box__title" id="scroll-button">Поехали!</button>
         </header>
         <div class="running-line">
             <p class="running-line__list">Викторина</p>
@@ -35,7 +36,7 @@
         </div>
     </div>
     <main>
-        <div class="games-box center">
+        <div class="games-box center" id="games-section">
             <section class="games-box__games">
                 <h1 class="games-box__title">Об играх</h1>
                 <p class="games-box__description">В моей коллекции представлено 6 игр на разные темы.<br> Игры несложные
@@ -43,7 +44,7 @@
             </section>
             <div class="games-box__content">
                 <div class="games-box__column">
-                    <a class="games-box__link" href="#game-1">
+                    <a class="games-box__link smooth-link" href="#game-1">
                         <article class="games-box__card games-box__card_1">
                             <img src="images/game-1.png" alt="game-1">
                             <div class="games-box__container">
@@ -52,7 +53,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="games-box__link" href="#game-4">
+                    <a class="games-box__link smooth-link" href="#game-4">
                         <article class="games-box__card games-box__card_4">
                             <img src="images/game-4.png" alt="game-4">
                             <div class="games-box__container">
@@ -63,7 +64,7 @@
                     </a>
                 </div>
                 <div class="games-box__column">
-                    <a class="games-box__link" href="#game-2">
+                    <a class="games-box__link smooth-link" href="#game-2">
                         <article class="games-box__card games-box__card_2">
                             <img src="images/game-2.png" alt="game-2">
                             <div class="games-box__container">
@@ -72,7 +73,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="games-box__link" href="#game-5">
+                    <a class="games-box__link smooth-link" href="#game-5">
                         <article class="games-box__card games-box__card_5">
                             <img src="images/game-5.png" alt="game-5">
                             <div class="games-box__container">
@@ -83,7 +84,7 @@
                     </a>
                 </div>
                 <div class="games-box__column">
-                    <a class="games-box__link" href="#game-3">
+                    <a class="games-box__link smooth-link" href="#game-3">
                         <article class="games-box__card games-box__card_3">
                             <img src="images/game-3.png" alt="game-3">
                             <div class="games-box__container">
@@ -92,7 +93,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="games-box__link" href="#game-6">
+                    <a class="games-box__link smooth-link" href="#game-6">
                         <article class="games-box__card games-box__card_6">
                             <img src="images/game-6.png" alt="game-6">
                             <div class="games-box__container">
@@ -142,7 +143,7 @@
                             <h2 class="mini-games__name">Переверни текст</h2>
                             <p class="mini-games__description">Попробуй ввести текст, который <br> будет перевернут.</p>
                         </div>
-                        <button class="mini-games__button">Играть!</button>
+                        <button class="mini-games__button" onclick="turnTheText()">Играть!</button>
                     </div>
                 </article>
             </a>
@@ -155,7 +156,7 @@
                             <p class="mini-games__description">Отвечай на вопросы викторины <br> с вариантами ответов.
                             </p>
                         </div>
-                        <button class="mini-games__button">Играть!</button>
+                        <button class="mini-games__button" onclick="simpleQuiz()">Играть!</button>
                     </div>
                 </article>
             </a>
@@ -196,6 +197,32 @@
     <!-- <script src="hw5.js"></script> -->
     <!-- <script src="hw6.js"></script> -->
     <script src="hw7.js"></script>
+    <script>
+        document.getElementById('scroll-button').addEventListener('click', function () {
+            document.getElementById('games-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.smooth-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const offset = 100;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
